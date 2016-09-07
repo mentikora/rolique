@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'CirceWebLight';
+	src: url('fonts/CRC35__W.eot');
+	src:
+	     url('fonts/CRC35__W.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/CRC35__W.woff') format('woff'),
+	     url('fonts/CRC35__W.ttf') format('truetype'),
+	     url('fonts/CRC35__W.svg#CirceWeb-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CirceWebRegular';
+	src: url('fonts/CRC55__W.eot');
+	src:
+	     url('fonts/CRC55__W.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/CRC55__W.woff') format('woff'),
+	     url('fonts/CRC55__W.ttf') format('truetype'),
+	     url('fonts/CRC55__W.svg#CirceWeb-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CirceWebBold';
+	src: url('fonts/CRC65__W.eot');
+	src:
+	     url('fonts/CRC65__W.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/CRC65__W.woff') format('woff'),
+	     url('fonts/CRC65__W.ttf') format('truetype'),
+	     url('fonts/CRC65__W.svg#CirceWeb-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CirceWebExtraBold';
+	src: url('fonts/CRC75__W.eot');
+	src:
+	     url('fonts/CRC75__W.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/CRC75__W.woff') format('woff'),
+	     url('fonts/CRC75__W.ttf') format('truetype'),
+	     url('fonts/CRC75__W.svg#CirceWeb-ExtraBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
