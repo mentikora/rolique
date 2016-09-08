@@ -64,3 +64,16 @@ body{
 	color: #fff;
 	background: #212121;
 }
+
+.test_wrapper{
+  width: 160px;
+  height: 30px;
+  position: relative;
+}
+.test {
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    position:absolute;
+    transition: background .7s ease;
+}
