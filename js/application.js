@@ -8,10 +8,11 @@
 	// preload
 	$(window).on('load', function() {
 	    var $preloader = $('.preloader');
-	    $preloader.delay(5000).fadeOut('slow');
+	    $preloader.delay(7000).fadeOut('slow');
 	});
 
-  var colors = ['red', 'black', 'white', 'green', 'yellow', 'orange', 'brown', 'inherit']; 
+  // preload animation
+  var colors = ['red', 'black', 'white', 'green', 'yellow', 'orange', 'brown', 'blue', 'grey', 'inherit']; 
   function animation(i) {
     if (i > colors.length) {
       return
