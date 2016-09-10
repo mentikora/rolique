@@ -52,5 +52,19 @@
     }, 800);
   });
 
+  // form submit
+  $( "form" ).submit( function(e) {
+    e.preventDefault();
+
+    if ( $( "input.form-controll" ).val().length > 0 ) {
+      $('.submit_btn').addClass('success');
+      $('.submit_btn').val("message sent");
+      return;
+    } else{
+      alert('Enter something');
+    }
+
+  });
+
 
 })();
