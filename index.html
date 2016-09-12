@@ -7,18 +7,31 @@
   <link rel="stylesheet" href="css/application.css">
 </head>
 <body>
-  <!-- <section class="preloader">
-    <div class="preloader_content">
-      <div class="animation_wrapper wow fadeIn" data-wow-delay=".25s">
-        <div class="animation"></div>
+
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="preloader_inner">
+      <div class="preloader_content">
+        <div class="animation_wrapper wow fadeIn" data-wow-delay=".25s">
+          <div class="animation"></div>
+        </div>
+        <div class="loader_img fadeIn wow"></div>
       </div>
-      <img src="img/loader_img.png" class="fadeIn wow" data-wow-duration="1s"></img>
     </div>
-  </section> -->
-  <div class="top wow fadeIn">
+  </div>
+  
+  <!-- menu wrapper -->
+  <div class="top wow fadeIn" data-wow-delay="6.5s">
     <a href="/" class="logo">
       <img src="img/logo.png" alt="rolique">
     </a>
+
+    <div class="mobile_toggle_btn hidden-lg pull-right">
+      <span class="line-1"></span>
+      <span class="line-2"></span>
+      <span class="line-3"></span>
+    </div>
+
     <ul id="menu">
       <li><span data-scroll=".first">Our work</span></li>
       <li><span data-scroll=".second">Who we are</span></li>
@@ -26,11 +39,12 @@
       <li><span data-scroll=".four">Contact Us</span></li>
     </ul>
   </div>
+
   <div id="fullpage">
 
     <!-- section 1th -->
     <section class="section first align-center">
-      <div class="container wow fadeInDown">
+      <div class="container wow fadeInDown" data-wow-offset="-300" data-wow-delay="6.5s">
         <h2 class="h2_title_big">
           turning stories
           <br> 
@@ -41,7 +55,7 @@
           We build products you love with a team you’ll enjoy
         </p>
       </div>
-      <div class="socials wow bounceIn" data-wow-delay="1s">
+      <div class="socials">
         <a href="javascript:void(0);" class="insta"></a>
         <a href="javascript:void(0);" class="tw"></a>
         <a href="javascript:void(0);" class="fb"></a>
@@ -52,7 +66,7 @@
     <section class="section second align-center">
       
       <div class="container">
-      
+        <div class="row">
         <div class="col-xs-12 col-sm-6 col-lg-3 design">
           <div class="img_wrapper wow fadeIn">
             <img src="img/s2_i1.png" alt="" class="img-responsive">
@@ -97,7 +111,7 @@
             </p>
           </div>
         </div>  
-      
+        </div>
       </div>
       
     </section>
@@ -105,6 +119,7 @@
     <!-- section 3rd -->
     <section class="section third align-center">
       <div class="container wow fadeInDown" data-wow-offset="350">
+        <div class="row">
         <h2 class="h2_title_big">
           who we are
         </h2>
@@ -115,13 +130,15 @@
           are passionate about creating unique & inspiring web products.
         </p>
         <a href="javascript:void(0);" class="section_btn">see our works</a>
+        </div>
       </div>
     </section>
 
     <!-- section 4th -->
     <section class="section four">
-      <aside class="col-md-6 left align-center">
+      <aside class="col-sm-6 left align-center">
         <div class="wow fadeIn" data-wow-offset="300">
+          <div class="chat"></div>
           <h3>CONTACT US</h3>
           <p>
             Feel free to ask something
@@ -130,7 +147,7 @@
           </p>
         </div>
       </aside>
-      <aside class="col-md-6 right wow fadeInRight" data-wow-offset="300">
+      <aside class="col-sm-6 right wow fadeInRight" data-wow-offset="300">
         <form action="" class="col-md-8 wow fadeIn" data-wow-delay="1s">
           <input type="text" placeholder="Name" class="form-controll">
           <input type="text" placeholder="E-mail" class="form-controll">
@@ -149,6 +166,11 @@
   <!-- scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    // init WoW
+    wow = new WOW({mobile:false});
+    wow.init();
+  </script>
   <script src="js/application.js"></script>
 
 </body>
